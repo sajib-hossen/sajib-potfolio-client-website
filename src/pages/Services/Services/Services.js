@@ -7,8 +7,8 @@ import desing from "../../../images/web-design-64.png";
 
 const Services = () => {
   return (
-    <Container className="my-5">
-      <h1 className="text-center text-info mt-5">My Services</h1>
+    <Container>
+      <h1 className="text-center text-info my-5">My Services</h1>
       <Row className="service_container">
         <Col sm={12} md={4} lg={4}>
           <div className="service">

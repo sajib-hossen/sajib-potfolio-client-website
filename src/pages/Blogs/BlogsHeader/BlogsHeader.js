@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
 import Navigation from "../../Shared/Navigation/Navigation";
 import Blogs from "../Blogs/Blogs";
 
@@ -7,6 +8,7 @@ const BlogsHeader = () => {
     <div>
       <Navigation></Navigation>
       <Blogs />
+      <Footer />
     </div>
   );
 };

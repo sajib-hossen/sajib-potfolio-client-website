@@ -35,23 +35,35 @@ const Banner = () => {
                 deleteSpeed={50}
                 delaySpeed={1000}
               />
-            </span>{" "}
+            </span>
           </h2>
 
-          <a href="https://github.com/sajib-hossen">
-            {" "}
+          <a
+            href="https://github.com/sajib-hossen"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={git} alt="" width="40px" />
           </a>
-          <a href="https://www.linkedin.com/in/sajib-hossen/">
-            {" "}
+          <a
+            href="https://www.linkedin.com/in/sajib-hossen/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={linkdin} alt="" width="45px" />
           </a>
-          <a href="https://twitter.com/?lang=en">
-            {" "}
+          <a
+            href="https://twitter.com/?lang=en"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={twitter} alt="" width="50px" />
           </a>
-          <a href="https://www.instagram.com/sajibhossensa90/">
-            {" "}
+          <a
+            href="https://www.instagram.com/sajibhossensa90/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={instagram} alt="" width="50px" />
           </a>
 
