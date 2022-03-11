@@ -6,7 +6,7 @@ import aboutimg from "../../../images/linkdin-image.png";
 const About = () => {
   return (
     <Container>
-      <h1>About Me</h1>
+      <h1 className="text-center my-5 fw-bold">About Me</h1>
       <Row>
         <Col sm={12} md={5} lg={5}>
           <img style={{ width: "100%" }} src={aboutimg} alt="" />
@@ -15,8 +15,10 @@ const About = () => {
           <div
             style={{
               textAling: "center",
-              marginLeft: "40px",
-              marginTop: "80px",
+              marginLeft: "30px",
+              marginTop: "40px",
+              padding: "10px",
+              width: "auto",
             }}
           >
             <div>
@@ -27,24 +29,26 @@ const About = () => {
                 put the some answer below, You may like it.
               </p>
             </div>
-            <Row>
-              <Col sm={6} md={6}>
-                <h2>Name : </h2>
-                <p>Sajib Hossen</p>
-              </Col>
-              <Col sm={6} md={6}>
-                <h2>Email :</h2>
-                <p>sajibhossensa90@gmail.com</p>
-              </Col>
-              <Col sm={6} md={6}>
-                <h2>Phone :</h2>
-                <p>01715676974</p>
-              </Col>
-              <Col sm={6} md={6}>
-                <h2>GitHub</h2>
-                <p> https://github.com/sajib-hossen</p>
-              </Col>
-            </Row>
+            <div className="mt-5">
+              <Row>
+                <Col className="my-3" sm={6} md={6}>
+                  <h2>Name : </h2>
+                  <h5>Sajib Hossen</h5>
+                </Col>
+                <Col className="my-3" sm={6} md={6}>
+                  <h2>Email :</h2>
+                  <h5>sajibhossensa90@gmail.com</h5>
+                </Col>
+                <Col className="my-3" sm={6} md={6}>
+                  <h2>Phone :</h2>
+                  <h5>01715676974</h5>
+                </Col>
+                <Col className="my-3" sm={6} md={6}>
+                  <h2>GitHub : </h2>
+                  <h5> https://github.com/sajib-hossen</h5>
+                </Col>
+              </Row>
+            </div>
           </div>
         </Col>
       </Row>

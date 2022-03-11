@@ -1,7 +1,5 @@
 import React from "react";
-import Blogs from "../../Blogs/Blogs/Blogs";
-import Contacts from "../../Contacts/Contacts/Contacts";
-import Projects from "../../Projects/Projects/Projects";
+import About from "../../About/About/About";
 
 import Services from "../../Services/Services/Services";
 
@@ -15,11 +13,9 @@ const Home = () => {
     <div>
       <Navigation />
       <Banner />
-      <Projects />
       <Services />
-      <Blogs />
-      <Contacts />
       <Skills />
+      <About />
     </div>
   );
 };
