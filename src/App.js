@@ -1,10 +1,9 @@
-import "./App.css";
-import Banner from "./pages/Home/Banner/Banner";
+import Home from "./pages/Home/Home/Home";
 
 function App() {
   return (
     <div>
-      <Banner />
+      <Home />
     </div>
   );
 }

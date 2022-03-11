@@ -1,91 +1,76 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import "./Banner.css";
+import git from "../../../images/github.svg";
+import linkdin from "../../../images/linkedin.svg";
+import twitter from "../../../images/twitter.svg";
+import instagram from "../../../images/instagram.svg";
+import banner_img from "../../../images/linkdin-image.png";
 import { Typewriter } from "react-simple-typewriter";
 import "./Banner.css";
-import github from "../../../images/github.svg";
-import instagram from "../../../images/instagram.svg";
-import twitter from "../../../images/twitter.svg";
-import linkedin from "../../../images/linkedin.svg";
 
 const Banner = () => {
   return (
-    <div className="banner_container">
-      <Container>
-        <Row>
-          <Col sm={12} md={6} lg={6}>
-            <div>
-              <p>Welcome To my world</p>
-              <h1>
-                Hi, I'm <span>Sajib Hossen a </span> <br />
-                <span style={{ color: "red", fontWeight: "bold" }}>
-                  <Typewriter
-                    words={[
-                      "Javascript Developer",
-                      "React Developer",
-                      "Full-Stack Developer",
-                      "MERN Stack Developer",
-                    ]}
-                    loop={5}
-                    cursor
-                    cursorStyle="😉"
-                    typeSpeed={70}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                  />
-                </span>
-              </h1>
-              <p>
-                I use animation as a third dimension by which to simplify
-                experiences and kuiding thro each and every interaction. I’m not
-                adding motion just to spruce things up, but doing it in ways
-                that.
-              </p>
-            </div>
-            <div>
-              <ul>
-                <a
-                  href="https://github.com/sajib-hossen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={github} alt="" width="30px" />
-                </a>
+    <Container>
+      <Row className="banner_row">
+        <Col sm={12} md={6} lg={6}>
+          <p>Welcome to my world</p>
+          <h4> Hello </h4>
+          <h1> I'm Sajib Hossen </h1>
+          <h2>
+            I am a {""}
+            <span style={{ color: "red", fontWeight: "bold" }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={[
+                  "Javascript Developer",
+                  "React Developer",
+                  "Full-Stack Web Developer",
+                  "MERN Stack Developer",
+                ]}
+                loop={5}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>{" "}
+          </h2>
 
-                <a
-                  href="https://github.com/sajib-hossen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={instagram} alt="" width="40px" />
-                </a>
+          <a href="https://github.com/sajib-hossen">
+            {" "}
+            <img src={git} alt="" width="40px" />
+          </a>
+          <a href="https://www.linkedin.com/in/sajib-hossen/">
+            {" "}
+            <img src={linkdin} alt="" width="45px" />
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            {" "}
+            <img src={twitter} alt="" width="50px" />
+          </a>
+          <a href="https://www.instagram.com/sajibhossensa90/">
+            {" "}
+            <img src={instagram} alt="" width="50px" />
+          </a>
 
-                <a
-                  href="https://github.com/sajib-hossen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={twitter} alt="" width="40px" />
-                </a>
-                <a
-                  href="https://github.com/sajib-hossen"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={linkedin} alt="" width="40px" />
-                </a>
-              </ul>
-            </div>
-            <div>
-              <button> Hire Me </button>
-              <button> Download CV </button>
-            </div>
-          </Col>
-          <Col sm={12} md={6} lg={6}>
-            hellow
-          </Col>
-        </Row>
-      </Container>
-    </div>
+          <div className="mt-4 ">
+            <Button className="banner_btn m-1 px-4 py-1" variant="info">
+              Hire me
+            </Button>
+            <Button className="banner_btn px-4 py-1 m-1" variant="info">
+              Download Cv
+            </Button>
+          </div>
+        </Col>
+        <Col sm={12} md={6} lg={6}>
+          <div className="banner_image">
+            <img src={banner_img} alt="" />
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
