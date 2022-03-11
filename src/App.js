@@ -20,10 +20,6 @@ function App() {
           <Route path="/skills" element={<SkillHeader />}></Route>
           <Route path="/services" element={<ServicesHeader />}></Route>
           <Route path="/contacts" element={<ContactsHeader />}></Route>
-
-          {/* <Route path="/" element={<Home />}></Route>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/" element={<Home />}></Route> */}
         </Routes>
       </BrowserRouter>
     </div>
