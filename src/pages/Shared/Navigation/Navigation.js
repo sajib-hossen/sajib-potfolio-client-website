@@ -5,10 +5,17 @@ import "./Navigation.css";
 
 const Navigation = () => {
   return (
-    <div>
+    <div
+      data-aos="fade-down"
+      data-aos-offset="300"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in-sine"
+    >
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Sajib___Hossen</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            Sajib___Hossen
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
@@ -35,7 +42,16 @@ const Navigation = () => {
                 Contact Us
               </Nav.Link>
             </Nav>
-            <Button variant="primary">Resume</Button>
+            <Button variant="primary">
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="https://drive.google.com/file/d/1F5jR_yHLLxxU4GrMgnNIVVbsaRxnOTtA/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>

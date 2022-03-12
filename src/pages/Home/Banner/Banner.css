@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .banner {
     width: auto;
     height: 100vh;
@@ -7,6 +13,7 @@
     background-color: rgba(0, 0, 0, 0.76);
     color: white;
     text-align: left;
+    overflow: hidden;
 }
 
 /* .banner_row {
@@ -25,6 +32,8 @@
 }
 
 .banner_image img {
-    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
 
 }

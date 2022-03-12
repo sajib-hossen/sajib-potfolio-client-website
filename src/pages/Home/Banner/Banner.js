@@ -8,6 +8,7 @@ import instagram from "../../../images/instagram.svg";
 import banner_img from "../../../images/linkdin-image.png";
 import { Typewriter } from "react-simple-typewriter";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -51,7 +52,12 @@ const Banner = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={git} alt="" width="40px" />
+                  <img
+                    style={{ background: "red" }}
+                    src={git}
+                    alt=""
+                    width="40px"
+                  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/sajib-hossen/"
@@ -77,11 +83,20 @@ const Banner = () => {
               </div>
 
               <div className="mt-4 ">
-                <Button className="banner_btn m-1 px-4 py-1" variant="info">
-                  Hire me
-                </Button>
+                <Link to="/contacts">
+                  <Button className="banner_btn m-1 px-4 py-1" variant="info">
+                    Hire me
+                  </Button>
+                </Link>
                 <Button className="banner_btn px-4 py-1 m-1" variant="info">
-                  Download Cv
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href="https://drive.google.com/file/d/1F5jR_yHLLxxU4GrMgnNIVVbsaRxnOTtA/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Download Cv
+                  </a>
                 </Button>
               </div>
             </div>
