@@ -5,7 +5,7 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <Container className="skills my-5">
+    <Container className="skills pt-5">
       <div>
         <div className="text-center">
           <h1 style={{ fontWeight: 700, marginTop: "20px" }}>
@@ -18,7 +18,13 @@ const Skills = () => {
           </p>
         </div>
         <Row className="mt-5">
-          <Col sm={12} md={6} lg={6}>
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
+            data-aos="fade-up-right"
+            data-aos-duration="2000"
+          >
             <h2>HTML</h2>
             <div
               className="progress"
@@ -116,7 +122,13 @@ const Skills = () => {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6} lg={6}>
+          <Col
+            sm={12}
+            md={6}
+            lg={6}
+            data-aos="fade-up-left"
+            data-aos-duration="2000"
+          >
             <h2>CSS</h2>
             <div
               className="progress"

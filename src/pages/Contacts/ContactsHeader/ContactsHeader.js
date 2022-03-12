@@ -5,7 +5,7 @@ import Contacts from "../Contacts/Contacts";
 
 const ContactsHeader = () => {
   return (
-    <div>
+    <div className="h-100">
       <Navigation />
       <Contacts />
       <Footer />
